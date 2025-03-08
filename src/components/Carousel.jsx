@@ -1,20 +1,20 @@
 import React from "react";
 import Slider from "react-slick";
-import Banner from "../components/Banner"; // Import the Banner component
+import Banner from "../components/Banner"; 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = () => {
-  // Slick settings
+ 
   const settings = {
-    dots: true, // Show navigation dots
-    infinite: true, // Loop through slides
-    speed: 500, // Transition speed
-    slidesToShow: 1, // Show one slide at a time
+    dots: true, 
+    infinite: true, 
+    speed: 500, 
+    slidesToShow: 1, 
     slidesToScroll: 1,
-    autoplay: true, // Auto-slide
-    autoplaySpeed: 3000, // Time for each slide
-    arrows: true, // Show next/prev arrows
+    autoplay: true, 
+    autoplaySpeed: 3000, 
+    arrows: true, 
   };
 
   return (

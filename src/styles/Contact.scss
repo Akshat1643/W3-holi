@@ -1,6 +1,7 @@
 .contact{
     width: 100%;
     display: flex;
+    // flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     // background-color: black;
@@ -40,12 +41,24 @@
             border-radius: 50px;
             background-color: #eee3ed;
             padding: 10px 25px;
-            width: 30%;
+            // width: 30%;
             &:hover{
                 color:white
             }
         }
 
 
+    }
+}
+@media(max-width:758px){
+    .contact{
+        flex-wrap: wrap;
+        justify-content: center;
+        >.map{
+            width: 100%;
+        }
+        >.form{
+            width: 80%;
+        }
     }
 }

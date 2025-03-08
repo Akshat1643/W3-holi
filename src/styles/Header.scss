@@ -51,3 +51,30 @@ header {
     padding: 15px;
     border-radius: 4px;
   }
+  .header-hamburger{
+    display: none;
+  }
+  // --media-query
+  @media (max-width:1199px){
+    header .childHeader .holi-navigations ul {
+      gap: 23px;
+    } 
+
+  }
+  @media (max-width:989px){
+    header .childHeader .holi-navigations ul li input {
+      width: 150px;
+    }
+    header .childHeader .holi-logo {
+      font-size: 23px;
+      
+      }
+    }
+  @media(max-width: 759px){
+    .holi-navigations{
+      display: none;
+    }
+    .header-hamburger{
+      display: block;
+    }
+  }
