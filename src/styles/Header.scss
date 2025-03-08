@@ -1,0 +1,53 @@
+header {
+    box-shadow: 0 0 4px 0 #ccc;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+  }
+  header .childHeader {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+  }
+  header .childHeader .holi-logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #D63384;
+    &:hover{
+      font-size: 35px;
+    }
+  }
+  header .childHeader .holi-navigations ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  header .childHeader .holi-navigations ul li {
+    list-style-type: none;
+  }
+  header .childHeader .holi-navigations ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    display: inline-block;
+    &:hover{
+        color:rgb(250, 170, 232); ;
+    }
+  }
+  header .childHeader .holi-navigations ul li input {
+    border: none;
+    border-radius: 50px;
+    background-color: #eee3ed;
+    padding: 10px 25px;
+    width: 300px;
+  }
+  header .childHeader .holi-navigations ul .getstarted a {
+    background-color: rgb(0, 162, 216);
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+  }

@@ -1,0 +1,71 @@
+.testi{
+   
+    background-color: #eee3ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position:relative;
+    padding: 60px 0px 10px 0px;
+    margin-top: 5rem;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Soft default shadow
+
+    &:hover {
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+        transform: translateY(-5px); 
+    }
+    >div{
+        background-color: #eee3ed;
+        color: black;
+    }
+
+}
+.testi-name{
+    font-size: 2rem;
+    color: rgb(8, 8, 8) !important;
+    font-weight: 600;
+    &:hover{
+        font-size: 2.5rem;
+    }
+}
+.testi-logo  {
+    position: absolute;
+    top: -20%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+  
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    background-color: black;
+}
+.t1{
+    border-radius: 50%;
+    background-image: url("https://www.holicolour.com/wp-content/uploads/2021/10/istockphoto-1157889904-612x612-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.t2{
+    border-radius: 50%;
+    background-image: url("https://www.holicolour.com/wp-content/uploads/2021/10/young-handsome-indian-man-against-brown-background_251136-45002.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.t3{
+    border-radius: 50%;
+    background-image: url("https://www.holicolour.com/wp-content/uploads/2021/10/istockphoto-1157889904-612x612-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.testi-logo i {
+    font-size: 5rem;
+
+    background: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+}

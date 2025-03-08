@@ -1,0 +1,51 @@
+.contact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    // background-color: black;
+    >.map{
+        width:65%;
+        height:400px ;
+    }
+    >.form{
+        width: 35%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid rgb(228, 224, 224);
+        padding: 10px;
+        // box-shadow: 2px 0 0 black;
+
+        >.form-field{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+             border-bottom: 1px solid rgb(215, 192, 192);
+           
+            >input{
+                width: 100%;
+                border: none;
+                border-radius: 10px;
+                text-align: center;
+                padding: 10px 25px;
+            }
+        }
+        >button{
+            border: none;
+            border-radius: 50px;
+            background-color: #eee3ed;
+            padding: 10px 25px;
+            width: 30%;
+            &:hover{
+                color:white
+            }
+        }
+
+
+    }
+}

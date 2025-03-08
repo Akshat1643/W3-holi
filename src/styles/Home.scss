@@ -1,0 +1,184 @@
+
+section{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+section .wrapper .holi-hero{
+    width: 100%;
+    height: 50vh;
+}
+// --- hero-section-started--
+.carousel-container {
+    width: 100%;
+    // height: 100%;
+    // max-width: 1200px;
+    margin: auto;
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .slick-prev, .slick-next {
+    z-index: 10;
+  }
+  .slick-prev{
+    left: 2%;
+  }
+  .slick-next{
+    right: 2%;
+  }
+  section .wrapper .banner-1{
+    background-image: url("../assets/banner01-1.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  >.banner-text{
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 10%;
+    z-index: 1;
+    background-color: transparent;
+    font-size: 2.5rem;
+    word-spacing: 5px;
+    display: flex;
+    
+  }
+}
+section .wrapper .banner-2{
+    background-image: url("../assets/banner02.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  >.banner-text{
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 10%;
+    z-index: 1;
+    background-color: transparent;
+    font-size: 2.5rem;
+    word-spacing: 5px;
+    display: flex;
+    
+  }
+}
+section .wrapper .banner-3{
+    background-image: url("../assets/banner03.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  >.banner-text{
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 10%;
+    z-index: 1;
+    background-color: transparent;
+    font-size: 2.5rem;
+    word-spacing: 5px;
+    display: flex;
+    
+  }
+}
+// --hero-section-ended--
+
+// --product-section
+.holi-products{
+    margin-top: 3rem;
+}
+.product-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #D63384;
+    font-weight: 700;
+}
+.product-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:20px ;
+}
+
+
+// testimonials
+.testimonials{
+  margin-top: 3rem;
+}
+.testimonials-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    >span:nth-child(1){
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: #D63384;
+        font-weight: 700;
+    }
+    >span:nth-child(2){
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+.testimonial-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:30px ;
+}
+
+// contact-us
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-top: 3rem;
+}
+.contact-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    >span:nth-child(1){
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #D63384;
+    }
+    >span:nth-child(2){
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.why-buy{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 3rem;
+  >.wbf-heading span{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #D63384;
+    font-weight: 700;
+  }
+}
+
+.wbf-card-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap:40px ;
+  grid-row-gap: 20px;
+}
+
