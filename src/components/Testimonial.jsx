@@ -4,7 +4,6 @@ const Testimonial = ({ className, name, review, rating }) => {
   return (
     <div className="testi">
       <div className={`testi-logo ${className}`}>
-        {/* You can add an icon here if needed */}
       </div>
       <div className="testi-name">{name}</div>
       <div className="testi-review">{review}</div>
