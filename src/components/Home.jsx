@@ -4,7 +4,8 @@ import Product from "./Product";
 import Testi from "./Testimonial";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import Wbf_card from "./Wbf_card"
+import Wbf_card from "./Wbf_card";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -14,7 +15,17 @@ const Home = () => {
         <br />
         <div className="holi-products" id="products">
           <div className="product-heading">
-            <span>Products....</span>
+            <motion.span
+              whileInView={{
+                fontSize: ["2.5rem", "4rem", "2.5rem"], // Scaling up and back
+              }}
+              transition={{
+                duration: 3, // Total animation time (3 seconds)
+                ease: "easeInOut",
+              }}
+            >
+              Products....
+            </motion.span>
             <span></span>
           </div>
           <div className="product-cards-container">
@@ -59,48 +70,116 @@ const Home = () => {
         <br />
         <div className="why-buy">
           <div className="wbf-heading">
-            <span>Why Buy From Us..</span>
+            <motion.span
+              whileInView={{
+                fontSize: ["2.5rem", "4rem", "2.5rem"], // Scaling up and back
+              }}
+              transition={{
+                duration: 3, // Total animation time (3 seconds)
+                ease: "easeInOut",
+              }}
+            >
+              Why Buy From Us..
+            </motion.span>
           </div>
           <div className="wbf-card-container">
-          <Wbf_card heading="🌈 Vibrant Colors" content="Our colors are skin-friendly, non-toxic, and eco-friendly." />
-        <Wbf_card heading="🪅 Fun Holi Toys" content="Water guns, balloons, and more to make your Holi exciting!" />
-        <Wbf_card heading="⚡ High-Quality Products" content="We ensure premium-grade colors and durable Holi toys." />
-        <Wbf_card heading="🚀 Fast Delivery" content="Get your Holi essentials delivered on time, hassle-free!" />
-        <Wbf_card heading="💰 Affordable Prices" content="Festive discounts and budget-friendly Holi shopping." />
-        <Wbf_card heading="🌿 Eco-Friendly Choices" content="Herbal colors and water-saving toys for a greener Holi." />
+            <Wbf_card
+              heading="🌈 Vibrant Colors"
+              content="Our colors are skin-friendly, non-toxic, and eco-friendly."
+            />
+            <Wbf_card
+              heading="🪅 Fun Holi Toys"
+              content="Water guns, balloons, and more to make your Holi exciting!"
+            />
+            <Wbf_card
+              heading="⚡ High-Quality Products"
+              content="We ensure premium-grade colors and durable Holi toys."
+            />
+            <Wbf_card
+              heading="🚀 Fast Delivery"
+              content="Get your Holi essentials delivered on time, hassle-free!"
+            />
+            <Wbf_card
+              heading="💰 Affordable Prices"
+              content="Festive discounts and budget-friendly Holi shopping."
+            />
+            <Wbf_card
+              heading="🌿 Eco-Friendly Choices"
+              content="Herbal colors and water-saving toys for a greener Holi."
+            />
           </div>
         </div>
         <br />
         <div className="testimonials" id="testimonials">
-          <div className="testimonials-heading">
-            <span>testimonials...</span>
+          <motion.div className="testimonials-heading">
+            <motion.span
+              whileInView={{
+                fontSize: ["2.5rem", "4rem", "2.5rem"], // Scaling up and back
+              }}
+              transition={{
+                duration: 3, // Total animation time (3 seconds)
+                ease: "easeInOut",
+              }}
+            >
+              testimonials...
+            </motion.span>
             <span>What people say about us ...</span>
-          </div>
+          </motion.div>
           <div className="testimonial-card-container">
-            <Testi
-              className="t1"
-              name="Akshat"
-              review="Great experience!"
-              rating="9.0"
-            />
-            <Testi
-              className="t2"
-              name="Rahul"
-              review="Good service, but can improve."
-              rating="7.5"
-            />
-            <Testi
-              className="t3"
-              name="Priya"
-              review="Not satisfied with the product."
-              rating="4.5"
-            />
+            <motion.div
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.3 }} // First card
+            >
+              <Testi
+                className="t1"
+                name="Akshat"
+                review="Great experience!"
+                rating="9.0"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.6 }} // Second card (after 0.3s)
+            >
+              <Testi
+                className="t2"
+                name="Rahul"
+                review="Good service, but can improve."
+                rating="7.5"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.9 }} // Third card (after 0.6s)
+            >
+              <Testi
+                className="t3"
+                name="Priya"
+                review="Not satisfied with the product."
+                rating="4.5"
+              />
+            </motion.div>
           </div>
         </div>
         <br />
         <div className="contact-us" id="contact">
           <div className="contact-heading">
-            <span>Contact-us..</span>
+            <motion.span
+              whileInView={{
+                fontSize: ["2.5rem", "4rem", "2.5rem"], // Scaling up and back
+              }}
+              transition={{
+                duration: 3, // Total animation time (3 seconds)
+                ease: "easeInOut",
+              }}
+            >
+              Contact-us..
+            </motion.span>
             <span>We are here for you..</span>
           </div>
           <Contact />
