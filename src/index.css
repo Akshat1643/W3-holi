@@ -1,3 +1,16 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for Firefox */
+  html {
+    scrollbar-width: none;
+  }
+  
+  /* Hide scrollbar for Internet Explorer/Edge */
+  body {
+    -ms-overflow-style: none;
+  }

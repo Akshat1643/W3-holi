@@ -10,21 +10,24 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <section className="hero" id="home">
+      <div style={{ width: "100%", margin: "0 auto" }} className="wrapper">
+       < Carousel />
+      </div>
       <div className="wrapper">
-        <Carousel />
+     
         <br />
         <div className="holi-products" id="products">
           <div className="product-heading">
             <motion.span
               whileInView={{
-                fontSize: ["2.5rem", "4rem", "2.5rem"], // Scaling up and back
+                fontSize: ["2.5rem", "3rem", "2.5rem"], // Scaling up and back
               }}
               transition={{
                 duration: 3, // Total animation time (3 seconds)
                 ease: "easeInOut",
               }}
             >
-              Products....
+              Products
             </motion.span>
             <span></span>
           </div>
@@ -72,14 +75,14 @@ const Home = () => {
           <div className="wbf-heading">
             <motion.span
               whileInView={{
-                fontSize: ["2.5rem", "4rem", "2.5rem"], // Scaling up and back
+                fontSize: ["2.5rem", "3rem", "2.5rem"], // Scaling up and back
               }}
               transition={{
                 duration: 3, // Total animation time (3 seconds)
                 ease: "easeInOut",
               }}
             >
-              Why Buy From Us..
+              Why Buy From Us?
             </motion.span>
           </div>
           <div className="wbf-card-container">
@@ -113,15 +116,8 @@ const Home = () => {
         <div className="testimonials" id="testimonials">
           <motion.div className="testimonials-heading">
             <motion.span
-              whileInView={{
-                fontSize: ["2.5rem", "4rem", "2.5rem"], // Scaling up and back
-              }}
-              transition={{
-                duration: 3, // Total animation time (3 seconds)
-                ease: "easeInOut",
-              }}
             >
-              testimonials...
+              testimonials
             </motion.span>
             <span>What people say about us ...</span>
           </motion.div>
@@ -171,14 +167,14 @@ const Home = () => {
           <div className="contact-heading">
             <motion.span
               whileInView={{
-                fontSize: ["2.5rem", "4rem", "2.5rem"], // Scaling up and back
+                fontSize: ["2.5rem", "3rem", "2.5rem"], // Scaling up and back
               }}
               transition={{
                 duration: 3, // Total animation time (3 seconds)
                 ease: "easeInOut",
               }}
             >
-              Contact-us..
+              Contact-us
             </motion.span>
             <span>We are here for you..</span>
           </div>
