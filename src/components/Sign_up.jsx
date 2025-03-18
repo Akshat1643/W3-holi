@@ -29,7 +29,7 @@ const Sign_up = () => {
   };
   return (
    
-      <div className="wrapper">
+      <section className="wrapper">
         
         <form onSubmit={handleSubmit} >
          <span>Sign-up</span>
@@ -68,7 +68,7 @@ const Sign_up = () => {
             <button type='submit'>Submit form</button>
           </div>
         </form>
-      </div>
+      </section>
   )
 }
 

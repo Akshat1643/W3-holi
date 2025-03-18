@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <section className="footer">
       <div className="footer-sec">
         <span>RANG-BAZAR</span>
         <span> Your One-Stop Shop for Holi Colors & Toys!</span>
@@ -39,7 +39,7 @@ const Footer = () => {
           <button>Subscribe</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

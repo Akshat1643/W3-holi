@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <section className="contact">
       <div className="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.8206387966975!2d77.42228007630607!3d28.66508868260005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1cab05312a5%3A0x2c9e1753d16cd363!2sMahender%20Holi%20colour%20%26%20Pichkari%20shop!5e0!3m2!1sen!2sin!4v1741415420258!5m2!1sen!2sin"
@@ -34,7 +34,7 @@ const Contact = () => {
         </div>
         <button>Submit..</button>
       </div>
-    </div>
+    </section>
   );
 };
 

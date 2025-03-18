@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="about-us wrapper">
+    <section className="about-us wrapper">
       <h2>About Us</h2>
       <p>
         Welcome to <strong>Rang-Bazar</strong>, your one-stop destination for everything Holi! 
@@ -44,7 +44,7 @@ const About = () => {
       </p>
 
       <p> <strong>Celebrate, Splash, and Spread Joy with Rang-Bazar!</strong></p>
-    </div>
+    </section>
   );
 };
 
